@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.start {
+    font-family: 'Press Start 2P',
+        cursive;
+    font-size: 2rem;
+    background: #000;
+    color: #9ead86;
+    display: block;
+    margin: auto;
+    margin-top: 12rem;
+    border: 5px solid #414835;
+    padding: 20px;
+    outline: none;
+}
+
+.start:hover{
+    cursor: pointer;
+}
+
+.start:active {
+    color: #000;
+    background-color: #414835;
+    border: 0;
+}
+
+.screen {
+    font-family: 'Press Start 2P',
+        cursive;
+    width: 360px;
+    height: 454px;
+    background-color: #9ead86;
+    border: #464e3b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.playground {
+    display: box;
+    border: 2px solid #000;
+    margin: 5px;
+}
+
+.row {
+    width: 220px;
+    height: 22px;
+}
+
+.cell {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: 2px solid #879372;
+    margin: 0 2px 2px 0;
+    float: left;
+}
+.cell::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #879372;
+    overflow: hidden;
+}
+
+.block {
+    border-color: #000;
+}
+.block::after {
+    background: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-board {
+    width: 122px;
+    font-size: 7px;
+    margin: 10px auto;
+}
+
+.info-board p {
+    padding: 5px 0;
+    text-align: center;
+}
